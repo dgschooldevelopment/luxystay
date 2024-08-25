@@ -1,0 +1,29 @@
+.lastswiper{
+    /* background-color: red; */
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 6%;
+    height: fit-content;
+    padding: 1vw 0vw;
+    margin-top: 3vh;
+}
+ .imges{
+    padding-right: 2vw;
+    padding-left: 2vw;
+    /* border-radius: 2.4vw; */
+}
+@media (min-width:1px) and (max-width:425px) {
+    .lastswiper{
+        /* padding: 0%; */
+        height: fit-content;
+        /* background-color: red; */
+        margin-top: 3vh;
+        /* background-color: red; */
+        display: none;
+
+    }
+    .imges{
+        height: 10vh;
+        width: 50vh;
+    }
+}

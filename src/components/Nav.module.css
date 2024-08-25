@@ -1,0 +1,57 @@
+.btn{
+    margin-right: 2.5vw;
+    padding: 0 1.2vw;
+    width: fit-content;
+    border-radius: 5px;
+    height: 2.5vw;
+    outline: none;
+    background: none;
+    border: 2px solid #bababa;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.navbar{
+    background-color: white;
+    /* padding-bottom: .5vw; */
+    height: 7vw;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 5vw;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px, rgba(0, 0, 0, 0.2) 0px 8px 16px -8px;
+    animation-name: transperant;
+    animation-timeline: scroll();
+    transition: 400ms;
+}
+
+.navitems{
+    margin-left: 35vw;
+    width: 70%;
+    /* background-color: crimson; */
+    height: 100%;
+    margin-bottom: 5vw;
+}
+
+.image{
+    position: absolute;
+    top: 10%;
+}
+
+.icons{
+    font-size: 2.8vw;
+    margin-left: 1.5vw;
+}
+
+
+@keyframes transperant{
+    0%{
+        background-color: transparent;
+    }
+
+    100%{
+       background-color: white;
+    }
+   
+}

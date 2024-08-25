@@ -1,0 +1,108 @@
+.faq{
+    height: 45vw;
+    width: 90%;
+    margin-left: 5%;
+    /* background-color: red; */
+    margin-top: 3vw;
+}
+.faqhead{
+    height: 10vw;
+    width: 100%;
+    /* background-color: blue; */
+}
+.faqhead h1{
+    font-size: 3vw;
+    font-weight: 500;
+    padding-right: 15%;
+    line-height: 2.5vw;
+}
+.faqhead input{
+    height: 3.5vw;
+    
+    padding-left: 1vw;
+    border-radius: 6px;
+    border: 1px solid rgb(202, 196, 196);
+    outline: none;
+    font-size: 1vw;
+   color: gray;
+   /* background-color: rgb(230, 216, 216); */
+    width: 25vw;
+    margin-left: 3%;
+}
+    
+.faqque{
+    height: 32vw;
+    width: 95%;
+    /* background-color: blue; */
+    margin-left: 3%;
+}
+.questions{
+    height: 5vw;
+    width: 100%;
+    /* background-color: green; */
+    border-bottom: 1px solid rgb(194, 187, 187);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.questions h2{
+    font-weight: 500;
+    font-size: 1.5vw;
+}
+.questions img{
+    height: 1.5vw;
+    width: 1.5vw;
+}
+.faq a{
+    font-size: 1.5vw;
+    color: blue;
+    padding-left: 3%;
+}
+
+
+@media (min-width:1px) and (max-width:425px) {
+    .faq{
+        /* background-color: red; */
+        width: 95%;
+        height: 60vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .faqhead{
+        /* background-color: green; */
+        height: 12vh;
+    }
+    .faqhead h1{
+        font-size: 2vh;
+        padding-top: 2vh;
+        padding-left: 1vh;
+    }
+    .faqhead input{
+        height: 5vh;
+        width: 85%;
+        font-size: 1.5vh;
+        margin-top: 2.5vh;
+    }
+    .faqque{
+        /* background-color: blue; */
+        height: 43vh;
+        width: 100%;
+    }
+    .questions{
+        /* background-color: black; */
+        height: 19%;
+        margin-left: 0;
+    }
+    .questions img{
+        width: 1.5vh;
+    }
+    .questions h2{
+        font-size: 1.9vh;
+        font-weight: 500;
+        line-height: 2.8vh;
+    }
+    .faq a{
+   font-size: 2vh;
+   padding-top: 2vh;
+    }
+}

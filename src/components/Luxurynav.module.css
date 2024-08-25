@@ -1,0 +1,293 @@
+.btn{
+    margin-right: 2.5vw;
+    padding: 0 1.2vw;
+    width: fit-content;
+    border-radius: 25px;
+    height: 3.5vw;
+    outline: none;
+    background-color: #f5f5f5;
+    border: 1px solid #bababa;
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: #1a1919;
+}
+
+.navbar{
+    background-color: white;
+    /* padding-bottom: .5vw; */
+    height: 7vw;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 5vw;
+    /* padding-bottom: 7vw; */
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px, rgba(0, 0, 0, 0.2) 0px 8px 16px -8px;
+    z-index: 10;
+}
+
+.navitems{
+    margin-left: 35vw;
+    width: 70%;
+    /* background-color: crimson; */
+    height: 100%;
+    margin-bottom: 5vw;
+}
+
+.image{
+    position: absolute;
+    top: 10%;
+    width: 10vw;
+}
+
+.icons{
+    font-size: 2.5vw;
+    margin-left: 1.5vw;
+}
+
+.right{
+    display: flex;
+    padding-right: 2vw;
+}
+.respo{
+    display: none;
+}
+.btnn{
+    display: none;
+}
+.nav{
+    display: none;
+}
+
+@media (min-width:1px) and (max-width:425px){
+
+    .nav{
+        display: block;
+        width: 100%;
+        height: 20vh;
+        /* background-color: red; */
+        overflow-x: auto;
+        background-color: #fff;
+        z-index: 10;
+    }
+
+    .uppernav{
+        width: 100%;
+        height: 40%;
+        background-color: #fff;
+        display: flex;
+        position: fixed;
+        height: 8vh;
+    }
+
+    .leftupper{
+        width: 20%;
+        height: 100%;
+        /* background-color: aqua; */
+        padding-left: 1vh;
+        padding-top: 1vh;
+    }
+
+    .icon{
+        font-size: 5vh;
+    }
+
+    .rightupper{
+        width: 80%;
+        height: 100%;
+        /* background-color: green; */
+        padding: 1vh;
+    }
+
+.inner{
+    width: 100%;
+    height: 100%;
+    /* background-color: cadetblue; */
+    border-radius: 12px;
+    display: flex;
+    border: 1px solid black;
+    padding: .5vh;
+}
+
+.innerleft{
+    width: 80%;
+    height: 100%;
+    /* background-color: salmon; */
+    padding-left: .5vh;
+    padding-bottom: .5vh;
+    /* padding-top: .5vh; */
+}
+
+.innerleft p{
+    font-size: 1.2vh;
+    font-weight: 600;
+}
+
+.innerleft h6{
+    font-size: 2vh;
+}
+
+.innerright{
+    width: 20%;
+    height: 100%;
+    /* background-color: chocolate; */
+    padding-left: 2.5vh;
+}
+
+.innerright p{
+    font-size: 1.5vh;
+    margin-left: .5vh;
+    color: #007bff;
+}
+
+.icon1{
+    margin-left: 1vh;
+    font-size: 2.3vh;
+    color: #007bff;
+}
+
+    .lowernav{
+        width: 100%;
+        height: 60%;
+        background-color: #fff;
+        padding-top: 8vh;
+        height: 20vh;
+    }
+
+    .lowup{
+        width: 100%;
+        height: 35%;
+        /* background-color: red; */
+        display: flex;
+        padding-top: .5vh;
+        padding-left: 1vh;
+    }
+
+
+
+    .lowup a{
+        text-decoration: none;
+    }
+
+    .arrow{
+        margin-top: .5vh;
+        margin-left: .8vh;
+    }
+
+    .lowup p{
+        margin-left: .5vh;
+    }
+
+    .lower{
+        width: 100%;
+        height: 65%;
+        /* background-color: crimson; */
+        position: fixed;
+        height: 8vh;
+        display: flex;
+        padding: .7vh;
+        overflow-x: auto;
+        background-color: #fff;
+    }
+
+    .leftlow{
+        width: 25%;
+        height: 85%;
+        /* background-color: aqua; */
+        padding-left: 6vh;
+        padding-top: 1.5vh;
+        border-right: 1px solid #c3c3c3;
+        margin-top: 1vh;
+    }
+
+    .ico{
+        font-size: 3.5vh;
+        color: #007bff;
+    }
+
+    .rightlow{
+        width: 75%;
+        height: 100%;
+        /* background-color: darkblue; */
+        overflow-x: auto;
+        display: flex;
+    }
+
+    .buton{
+        /* width: 15vh;*/
+        height: 5vh;
+        padding: .5vh;
+        margin-left: 1vh;
+        margin-top: 1.5vh;
+        background: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        /* width: 20vh; */
+    }
+
+.scrolled {
+  /* add styles for the scrolled state */
+  .lowernav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .lower {
+    margin-top: 0;
+  }
+}
+
+    .navbar{
+        height: 7vh;
+        /* background-color: red; */
+        padding: 0;
+        display: none;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .icons{
+        display: none;
+    }
+
+    .respo{
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        justify-content: space-between;
+        background-color: crimson;
+    }
+
+    .container-fluid{
+        display: none;
+    }
+    form{
+        display: none;
+    }
+
+    .leftrespo{
+        width: 20%;
+        height: 100%;
+        background-color: aqua;
+    }
+
+    .rightrespo{
+        width: 80%;
+        height: 100%;
+        /* background-color: cadetblue; */
+    }
+
+    .rightrespo{
+        margin-left: 10vh;
+    }
+    .btnn{
+        display: block;
+    }
+}

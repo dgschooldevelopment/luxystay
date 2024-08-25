@@ -1,0 +1,317 @@
+.card{
+    width: 100%;
+    height: 25vw;
+    /* background-color: red; */
+    padding:0 2vw;
+}
+
+.firstcard{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    border-radius: 12px;
+    display: flex;
+    margin-top: 3vw;
+    border: .2px solid #c3c3c3;
+}
+
+.cardleft{
+    width: 35%;
+    height: 100%;
+    /* background-color: crimson; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px 0 0 12px;
+}
+
+.cardmid{
+    width: 45%;
+    height: 100%;
+    /* background-color: yellow; */
+    border-right: 1px solid #c3c3c3;
+}
+
+
+
+.name{
+    width: 100%;
+    height: 20%;
+    /* background-color: gold; */
+    display: flex;
+    align-items: flex-end;
+    padding-left: 1vw;
+}
+
+.name h3{
+    font-size: 1.8vw;
+}
+
+.location{
+    width: 100%;
+    height: 10%;
+    /* background-color: goldenrod; */
+    padding-left: 1vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 1vw;
+    padding-top: .3vw;
+}
+
+.location p{
+    font-size: 1vw;
+}
+.location img{
+    width: 1vw;
+}
+.guest{
+    width: 100%;
+    height: 10%;
+    /* background-color: red; */
+    padding-left: 1vw;
+    display: flex;
+    padding-top: .3vw;
+    margin-top: .5vw;
+}
+
+.guest p{
+    font-size: 1vw;
+}
+.guest img{
+    padding: .5vw;
+}
+
+.great{
+    width: 90%;
+    height: 15%;
+    /* background-color: crimson; */
+    /* padding-left: 1vw; */
+    padding-top: .6vw;
+    margin-left: 1vw;
+    border-bottom: .5px solid gray;
+}
+
+.great p{
+    font-size: 1.2vw;
+    /* padding: .5vw; */
+    
+}
+
+.great img{
+    width: 1vw;
+}
+
+.great img{
+    margin-left: .5vw;
+}
+
+.citizen{
+    width: 1.1vw;
+    height: 1.1vw;
+}
+
+
+.midlow{
+    width: 100%;
+    height: 40%;
+    /* background-color: aquamarine; */
+    margin-top: .3vw;
+    display: flex;
+}
+
+.lowcard{
+    width: 15%;
+    height: 100%;
+    /* background-color: crimson; */
+}
+
+.lowcard img{
+    width: 3vw;
+    height: 3vw;
+    border: 1px solid black;
+    padding: .5vw;
+    border-radius: 7px;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+.lowcard p{
+    font-size: 1vw;
+    text-align: center;
+}
+
+.lowcard h6{
+    margin-top: 1.5vw;
+    margin-left: 1vw;
+    font-size: 1.2vw;
+}
+
+.cardright{
+    width: 20%;
+    height: 100%;
+    padding-top: 10vw;
+    padding-left: 1.5vw;
+}
+
+.cardright h4{
+    margin-left: 5vw;
+    font-size: 2vw;
+} 
+
+.cardbtn{
+    padding: .5vw;
+    outline: none;
+    border: 1px solid #007bff;
+    background: none;
+    background-color: #d7ebff;
+    border-radius: 6px;
+    width: 12vw;
+    height: 3.1vw;
+    font-size: 1vw;
+}
+
+.cardbtn1{
+        padding: .5vw;
+        outline: none;
+        border: 1px solid #007bff;
+        background: none;
+        background-color: #d7ebff;
+        border-radius: 6px;
+        width: 12vw;
+        height: 3.1vw;
+        font-size: 1vw;
+}
+
+.cardbtn img{
+     width: 1.5vw;
+}
+
+.cardright p{
+    font-size: .9vw;
+    color: #c3c3c3;
+    font-weight: 500;
+    margin-top: .5vw;
+}
+
+
+@media (min-width:1px) and (max-width:425px)
+{
+    .card{
+        width: 100%;
+        height: 60vh;
+        /* background-color: red; */
+    }
+
+    .firstcard{
+        width: 90%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2.5vh;
+    }
+
+    .cardleft{
+        width: 100%;
+        height: 30vh;
+        border-radius: 12px 12px 0 0;
+        /* background-color: red; */
+        
+    }
+
+    .cardmid{
+        width: 100%;
+        height: 25vh;
+        /* background-color: red; */
+        /* margin-top: 10vh; */
+    }
+
+    .guest{
+        margin-top: 2vh;
+    }
+
+    .great{
+        display: none;
+    }
+
+
+    .location img{
+        width: 2vh;
+    }
+
+    .cardmid h3{
+        font-size: 2.5vh;
+        margin-top: 1vh;
+    } 
+
+    .cardmid p{
+        font-size: 1.8vh;
+    }
+
+
+    .lowcard{
+        margin-left: 1.2vh;
+        margin-top: 1.5vh;
+    }
+
+    .lowcard h6{
+        font-size: 2vh;
+    }
+
+    .lowcard img{
+        width: 5vh;
+        height: 5vh;
+    }
+
+    .cardright{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0;
+        padding: 0;
+        height: 8vh;
+        margin-top: 3vh;
+        padding-right: 3vh;
+    }
+
+    .btn1{
+        display: none;
+    }
+
+
+    .cardright button{
+        width: 15vh;
+        height: 4vh;
+        font-size: 1.5vh;
+    }
+
+    .cardbtn{
+        margin-right: 10vh;
+        height: 3vh;
+    }
+
+    .cardbtn img{
+        width: 3vh;
+    } 
+
+    .cardright h4{
+        font-size: 2vh;
+    }
+
+
+    .cardbtn1{
+        display: none;
+    }
+
+    .cardright p{
+        /* margin-left: 15vh; */
+        margin-top: 3vh;
+        /* width: 25vh; */
+        font-size: 1.4vh;
+        position: absolute;
+    }
+
+    .rating{
+     display: none;
+    }
+}

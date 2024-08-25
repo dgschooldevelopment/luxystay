@@ -1,0 +1,154 @@
+.footer {
+  background-color: #303135;
+  margin-top: 5vw;
+  padding: 80px 0;
+  z-index: 20;
+  
+
+}
+.footer h3{
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: white;
+    margin-left: 1.5vw;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer ul li{
+    font-size: 0.9vw;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colmd3 {
+  width: 25%;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.more {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 1.8vw;
+}
+.hided,.hided2,.hided3,.hided4{
+  display: none;
+}
+@media (min-width:1px) and (max-width:425px) {
+  .footer{
+    height: 60vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+   margin: 0%; 
+   margin-top: 3vh;
+  }
+  ul{
+    display: none;
+    margin: 0%;
+    background-color: yellow;
+    position: absolute;
+    height: 5vh;
+  }
+  .anii {
+    /* your styles here */
+    color: red;
+    font-weight: bold;
+  }
+  .more{
+    display: none;
+    margin: 0%;
+  }
+  .footer h3{
+    margin: 0%;
+    margin-top: 3vh;
+    font-size: 2vh;
+    text-align: center;
+  }
+  .row{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    text-align: center;
+    /* background-color: red;  */
+    /* margin-left: 10vh; */
+
+  }
+  .colmd3{
+    /* background-color: yellow; */
+    width: fit-content;
+    text-align: center;
+  }
+  .hided{
+    display: none;
+    position: absolute;
+    right: 1vh;
+    bottom: -205vh;
+    /* top:2vh; */
+    text-align: center;
+    /* z-index: 100; */
+
+  }
+  .hided p,.hided2 p, .hided3 p,.hided4 p{
+    font-size: 1.6vh;
+    margin: 0%;
+    /* background-color: red; */
+    font-weight:600 ;
+    /* position: absolute; */
+    /* margin-bottom:4vh; */
+  }
+  .hided2{
+    display: none;
+    position: absolute;
+    right: 1vh;
+    bottom: -210vh;
+    /* top:2vh; */
+    text-align: center;
+    /* z-index: 100; */
+    /* background-color: yellow; */
+  }
+  .hided3{
+  
+      display: none;
+      position: absolute;
+      right: 1vh;
+      bottom: -210vh;
+      /* top:2vh; */
+      text-align: center;
+      /* z-index: 100; */
+      /* background-color: yellow; */
+  
+  }
+  .hided4{
+    display: none;
+    position: absolute;
+    right: 1vh;
+    bottom: -210vh;
+    /* top:2vh; */
+    text-align: center;
+    /* z-index: 100; */
+    /* background-color: yellow; */
+  }
+}

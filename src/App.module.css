@@ -1,0 +1,19 @@
+.maindiv{
+  height: 100%;
+  width: 100%;
+}
+.aniket{
+  height: 100vw;
+  width: 100%;
+}
+.heading{
+  margin-top: 5vw;
+  margin-left: 8%;
+}
+.heading2{
+  margin-top: 5vw;
+  margin-left: 7%;
+  font-size: 1.3vw;
+  font-weight: 500;
+
+}

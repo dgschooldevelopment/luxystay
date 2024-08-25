@@ -1,0 +1,131 @@
+.peace{
+    height: 60vw;
+    width: 90%;
+    margin-left: 5%;
+    /* background-color: red; */
+    margin-top: 1vw;
+}
+.peacehead{
+    height: 6vw;
+    width: 100%;
+    /* background-color: blue; */
+}
+.peacehead h1{
+    font-size: 3vw;
+    font-weight: 500;
+    padding-top: 2vw;
+    line-height: 2vw;
+    
+}
+.peacepic{
+    height: 40vw;
+    width: 100%;
+    /* background-color: blue; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+        transition: transform 1s ease;
+    }
+    .peacepic:hover{
+        transform: scale(1.03); 
+        
+      }
+
+.peacecontent{
+    height: 15vw;
+    width: 100%;
+    /* background-color: blue; */
+}
+.peacecontentone{
+    height: 50%;
+    width: 100%;
+    /* background-color: green; */
+    display: flex;
+}
+.peacecontenttwo{
+    height: 50%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+}
+.peaceobject{
+    height: 100%;
+    width: 33%;
+    /* background-color: red; */
+    display: flex;
+   
+}
+.peaceobjectimg{
+    height: 100%;
+    width: 20%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.peaceobjecttxt{
+    height: 100%;
+    width: 80%;
+    /* background-color: red; */
+}
+.peaceobjecttxt p{
+    font-size: 1.6vw;
+    line-height: 2vw;
+    color: rgb(87, 85, 85);
+}
+
+@media (min-width:1px) and (max-width:425px) {
+    .peace{
+        /* background-color: red; */
+        height: 80vh;
+        width: 97%;
+        margin-top: 2.5vh;
+    }
+    .peacehead{
+        /* background-color: blue; */
+        height: 5vh;
+    }
+    .peacehead h1{
+        font-size: 2vh;
+        padding-top: 2vh;
+    }
+    .peacepic{
+        height: 30vh;
+        border-radius: 7px;
+        width: 97%;
+    }
+    .peacecontent{
+        /* background-color: blue; */
+        height: 43.5vh;
+    }
+    .peacecontentone{
+        /* background-color: black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        width: 100%;
+    }
+  
+    .peacecontenttwo{
+        /* background-color: black; */
+        display: flex;
+        flex-direction: column;
+    }
+    .peaceobject{
+        /* background-color: crimson; */
+        height: 9vh;
+        width: 100%;
+    }
+    .peaceobjecttxt{
+        /* background-color: green; */
+        width: 80%;
+    }
+    .peaceobjecttxt p{
+        font-size: 1.9vh;
+        line-height: 2.3vh;
+        padding-top: 2vh;
+        font-weight: 500;
+    }
+}
