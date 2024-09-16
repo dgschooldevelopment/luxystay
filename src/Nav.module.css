@@ -7,7 +7,7 @@
     outline: none;
     background: none;
     border: 2px solid #bababa;
-    font-size: 1vw;
+    font-size: 0.9vw;
     font-weight: 600;
     color: gray
     /* animation-name: color;
@@ -15,44 +15,59 @@
 
 }
 .navlink{
- color: gray;
+ /* color: gray; */
  text-decoration: none;
+ color: #f8d1a6;
 }
-.navbar{
+.navbar{ 
+
     background-color: white;
     /* padding-bottom: .5vw; */
-    height: 5vw;
+  height: 5vw;
     position: fixed;
     width: 100%;
+    height: fit-content;
     display: flex;
     align-items: center;
-    padding-top: 5vw;
+    /* padding-top: 5vw; */
     box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px, rgba(0, 0, 0, 0.2) 0px 8px 16px -8px;
-    /* animation-name: transperant;
-    animation-timeline: scroll(); */
-    transition: 400ms;
+     /* animation-name: transperant; 
+    animation-timeline: scroll();  */
+    /* transition: 400ms; */
     z-index: 12;
+    /* position: relative; */
 }
-
-.navitems{
-    margin-left: 35vw;
-    width: 70%;
-    /* background-color: crimson; */
-    height: 100%;
-    margin-bottom: 5vw;
-}
-
 .image{
+    /* background-color: red; */
     position: absolute;
-    top: 10%;
 }
+ .navitems{
+    margin-left: 32vw;
+    width: 70%;
+/* background-color: red; */
+margin-bottom: 1vw;
+}
+
+
 
 .icons{
-    font-size: 2.8vw;
+    font-size: 2.3vw;
     margin-left: 1.5vw;
+    /* padding-top: 1.2vw; */
 }
-
-
+.down{
+    /* display: block; */
+    height: 4vw;
+    width: 100%;
+    background-color: red;
+    position: fixed;
+    top: 5%;
+    z-index: 10;
+    display: none;
+   }
+   .menu{
+    display: none;
+   }
 @keyframes transperant{
     0%{
         background-color: transparent;
@@ -88,7 +103,14 @@
         /* display: none; */
         height: 10vh;
         color: black;
-       
+       display: flex;
+       justify-content: flex-end;
+    }
+    .image{
+        display: block;
+    }
+    .navitems{
+        display: none;
     }
     .navlink{
         display: block;
@@ -110,4 +132,57 @@
    .none{
     display: none;
    }
+   .down{
+    display: none;
+    height: 100vh;
+    width: 75%;
+    /* background-color: red; */
+    position: fixed;
+    z-index: 13;
+    /* top: 10%; */
+    margin-left: 25%;
+    top: 0%;
+   }
+   .top{
+    height: 17%;
+    background-color: black;
+    color: white;
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-end;
+   }
+   .close{
+    /* height: 4vh; */
+    font-size: 3vh;
+    margin-top: 2vh;
+    margin-right: 1vh;
+   }
+   .whitedown{
+    background-color:white;
+    height: 83%;
+    display:flex;
+    flex-direction: column;
+   }
+  .link{
+    height: 37%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    justify-content: space-around;
+    padding-left: 20%;
+  }
+  #listur{
+    color: #000;
+  }
+  .links{
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2.2vh;
+  }
+  .menu{
+    display: block;
+    font-size: 4vh;
+  }
    }

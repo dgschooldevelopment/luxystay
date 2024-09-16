@@ -542,7 +542,7 @@ let Rightcard = () => {
         },
     ]
   
-return <>
+return <div className={styles.cardiv}>
 
 <div className={styles.card}>
    
@@ -612,7 +612,7 @@ return <>
 <h4>{item.price}</h4>
 <button className={styles.cardbtn}><img src={img13} alt="" />For 1 Room <IoIosArrowDown />
 </button>
-<p>Per Night + Taxes( 1 Room)</p>
+<p >Per Night + Taxes( 1 Room)</p>
 <button className={styles.cardbtn1}  style={{backgroundColor:"black" , color:"#fff" ,border:"none" , fontSize:"1.5vw" ,marginBottom:"1vw"}}>View <IoIosArrowRoundForward />
 </button>
 </div>
@@ -623,7 +623,7 @@ return <>
 
 </div>
 
-</>
+</div>
 
 }
 

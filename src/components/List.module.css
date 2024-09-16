@@ -1,235 +1,258 @@
-
-.propertyheader{
-    height: 45vw;
-    width: 100%;
-   padding-top: 8vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-color: red;  */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .propertyheadertext{
-    /* background-color: green; */
-    height: 80%;
-    width: 50%;
-    margin-left: 5%;
-  }
-  .propertyheadertext h1{
-    color: white;
-    padding-left: 6%;
-    font-size: 3.5vw;
-    font-weight: 500;
-    padding-top: 30%;
-    line-height: 4vw;
-  }
-  .propertyheaderform{
-    background-color: white;
-    height: 94%;
-    width: 39%;
-    border-radius: 6px;
-    margin-right: 8%;
-  }
-  .propertyheaderform h2{
-    font-weight: 500;
-    padding-left: 1.5vw;
-    font-size: 2vw;
-  }
-  .form{
-    height: 4vw;
-    width: 93%; 
-    margin-left: 1.5vw;
-    /* background-color: red; */
-    margin-top: 1vw;
-    display: flex;
-    justify-content: space-between;
-  }
-select{
+.propertyheader {
+  height: 38vw;
+  width: 100%;
+  padding-top: 7vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  /* margin-top: 2vw; */
+  /* align-items: center; */
+}
+.propertyheadertext {
+  /* background-color: green; */
+  height: 80%;
+  width: 40%;
+  margin-left: 5%;
+}
+.propertyheadertext h1 {
+  color: white;
+  padding-left: 9%;
+  font-size: 2.8vw;
+  font-weight: 500;
+  padding-top: 20%;
+  line-height: 3.5vw;
+}
+.propertyheaderform {
+  background-color: white;
+  height: 97%;
+  width: 37%;
+  border-radius: 6px;
+  margin-right: 8%;
+  margin-bottom: 10%;
+}
+.propertyheaderform h2 {
+  font-weight: 500;
+  padding-left: 1.5vw;
+  font-size: 2vw;
+  padding-top: 2vw;
+}
+.form {
+  height: 3.1vw;
+  width: 93%;
+  margin-left: 1.5vw;
+  /* background-color: red; */
+  margin-top: 1vw;
+  display: flex;
+  justify-content: space-between;
+}
+select {
   height: 90%;
-  width: 25%;
+  width: 22%;
   border-radius: 6px;
   border: 1px solid rgb(202, 196, 196);
   outline: none;
   font-size: 1vw;
-  margin-left: 1.5vw;
+  margin-left: 0.7vw;
 }
 
-  .form input{
-    height: 90%;
-    width: 44%;
-   border-radius: 6px;
-   border: 1px solid rgb(202, 196, 196);
-   outline: none;
-   font-size: 1vw;
-   padding-left: 1vw;
-  
-  }
-  .mobileinput{
-    height: 100%;
-    width: 47%;
+.form input {
+  height: 90%;
+  width: 44%;
+  border-radius: 6px;
+  border: 1px solid rgb(202, 196, 196);
+  outline: none;
+  font-size: 1vw;
+  padding-left: 1vw;
+}
+
+.form1 {
+  height: 3.2vw;
+  width: 93%;
+  margin-left: 1.5vw;
+  /* background-color: red; */
+  margin-top: 1vw;
+  display: flex;
+  justify-content: space-around;
+}
+.email {
+  width: 50%;
+  height: 100%;
+  /* background-color: blue; */
+}
+.mobileinput {
+  width: 50%;
+  height: 100%;
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+}
+.email input {
+  height: 90%;
+  width: 89%;
+  border-radius: 6px;
+  border: 1px solid rgb(202, 196, 196);
+  outline: none;
+  font-size: 1vw;
+  padding-left: 1vw;
+  /* margin: 0 1vw; */
+}
+.mobileinput input {
+  height: 90%;
+  width: 64%;
+  border-radius: 6px;
+  border: 1px solid rgb(202, 196, 196);
+  outline: none;
+  font-size: 1vw;
+  padding-left: 1vw;
+}
+.form2 {
+  height: 4vw;
+  width: 93%;
+  margin-left: 1.5vw;
+
+  margin-top: 1vw;
+}
+.form2 input {
+  height: 90%;
+  width: 95%;
+  border-radius: 6px;
+  border: 1px solid rgb(202, 196, 196);
+  outline: none;
+  font-size: 1vw;
+  padding-left: 1vw;
+}
+.form3 {
+  height: 5vw;
+  width: 93%;
+  margin-left: 1.5vw;
+
+  margin-top: 1vw;
+}
+.form3 input {
+  height: 80%;
+  width: 95%;
+  border-radius: 6px;
+  border: 1px solid rgb(202, 196, 196);
+  outline: none;
+  font-size: 1vw;
+  padding-left: 1vw;
+}
+button {
+  height: 3vw;
+  width: 93%;
+  margin-left: 1.5vw;
+  background-color: black;
+  color: white;
+  margin-top: 1vw;
+  outline: none;
+}
+
+@media (min-width: 1px) and (max-width: 425px) {
+  .propertyheader {
+    height: 95vh;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-     /* background-color: red;  */
-    
-  }
-
-  .form1{
-    height: 4vw;
-    width: 93%; 
-    margin-left: 1.5vw;
-    /* background-color: red; */
-    margin-top: 1vw;
-    display: flex;
-    justify-content: space-between;
-  }
-  .form1 input{
-    height: 90%;
-    width: 47%;
-   border-radius: 6px;
-   border: 1px solid rgb(202, 196, 196);
-   outline: none;
-   font-size: 1vw;
-   padding-left: 1vw;
-   margin:0  1vw;
-  }
-  .form2{
-    height: 4vw;
-    width: 93%; 
-    margin-left: 1.5vw;
-  
-    margin-top: 1vw;
-  
-  }
-  .form2 input{
-    height: 90%;
-    width: 95%;
-   border-radius: 6px;
-   border: 1px solid rgb(202, 196, 196);
-   outline: none;
-   font-size: 1vw;
-   padding-left: 1vw;
- 
-  }
-  .form3{
-    height: 7vw;
-    width: 93%; 
-    margin-left: 1.5vw;
-  
-    margin-top: 1vw;
-  
-  }
-  .form3 input{
-    height: 90%;
-    width: 95%;
-   border-radius: 6px;
-   border: 1px solid rgb(202, 196, 196);
-   outline: none;
-   font-size: 1vw;
-   padding-left: 1vw;
-   }
-   button{
-    height: 3vw;
-    width: 93%; 
-    margin-left: 1.5vw;
-   background-color: black;
-   color: white;
-    margin-top: 1vw;
-    outline: none;
-  
-  }
-
-
-  @media (min-width:1px) and (max-width:425px) {
-    
-    .propertyheader{
-      height: 95vh;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-right: 0;
     padding-top: 10vh;
     /* background-color: red; */
-    }
-    .propertyheadertext{
-      /* background-color: red; */
-      height: 22vh;
-      width: 90%;
-
-    }
-    .propertyheadertext h1{
-      line-height: 2.8vh;
-      padding-top: 2vh;
-      font-size: 2.4vh;
-      padding-right: .8vh;
-    }
-    .propertyheaderform{
-      width: 90%;
-      margin-left: 5%;
-      margin-bottom: 2vh;
-    }
-    .propertyheaderform h2{
-      font-size: 1.8vh;
-      padding-left: 2vh;
-      padding-top: 2vh;
-    }
-    .form{
-      height: 11vh;
-      display: flex;
-      margin-top: .7vh;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-    }
-    .form input{
-      height: 45%;
-      width: 90%;
-      font-size: 1.5vh;
-      margin: .5vh 0;
-
-    }
-    .form1{
-      height: 11vh;
-      display: flex;
-      flex-direction: column;
-     
-     }
-     .form1 input{
-      height: 46%;
-      width: 90%;
-      font-size: 1.5vh;
-      margin: .5vh 0;
-      margin-left: 1vh;
-     }
-     select{
-      display: none;
-
-     }
-     .form2{
-      height: 9vh;
-     }
-     .form2 input{
-      font-size: 1.5vh;
-      margin: .5vh 0;
-      margin-left: 1vh;
-      width: 90%;
-     }
-     .form3{
-      height: 5vh;
-     }
-    .form3 input{
-      font-size: 1.5vh;
-      margin: .5vh 0;
-      margin-left: 1vh;
-      width: 90%;
-    }
-    button{
-      height: 3vh;
-      margin: .5vh 0;
-      width: 90%;
-      margin-left: 1vh;
-      margin-top: 2vh;
-    }
   }
+  .propertyheadertext {
+    /* background-color: red; */
+    height: 22vh;
+    width: 90%;
+  }
+  .propertyheadertext h1 {
+    line-height: 2.8vh;
+    padding-top: 2vh;
+    font-size: 2.4vh;
+    padding-right: 0.8vh;
+  }
+  .propertyheaderform {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 2vh;
+  }
+  .propertyheaderform h2 {
+    font-size: 1.8vh;
+    padding-left: 2vh;
+    padding-top: 2vh;
+  }
+  .form {
+    height: 11vh;
+    display: flex;
+    margin-top: 0.7vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .form input {
+    height: 45%;
+    width: 90%;
+    font-size: 1.5vh;
+    margin: 0.5vh 0;
+  }
+  .form1 {
+    height: 11vh;
+    display: flex;
+    margin-top: 0.7vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+  }
+  .email {
+    width: 90%;
+    height: 90%;
+    /* background-color: BLUE; */
+  }
+  .email input {
+    height: 80%;
+    width: 98%;
+    font-size: 1.5vh;
+    margin: 0.5vh 0;
+  }
+  .mobileinput {
+    width: 91%;
+    /* background-color: green; */
+  }
+  .mobileinput input {
+    width: 98%;
+    height: 80%;
+    font-size: 1.5vh;
+    margin: 0.5vh 0;
+  }
+
+  select {
+    display: none;
+  }
+  .form2 {
+    height: 9vh;
+  }
+  .form2 input {
+    font-size: 1.5vh;
+    margin: 0.5vh 0;
+    margin-left: 1vh;
+    width: 90%;
+  }
+  .form3 {
+    height: 5vh;
+  }
+  .form3 input {
+    font-size: 1.5vh;
+    margin: 0.5vh 0;
+    margin-left: 1vh;
+    width: 90%;
+  }
+  button {
+    height: 3vh;
+    margin: 0.5vh 0;
+    width: 90%;
+    margin-left: 1vh;
+    margin-top: 2vh;
+  }
+}

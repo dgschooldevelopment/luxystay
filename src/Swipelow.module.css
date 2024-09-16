@@ -28,6 +28,7 @@
     color: #8d8d8d;
     background: none;
     border-radius: 5px;
+   
 }
 
 .lowright{
@@ -51,29 +52,31 @@
 
 
 .maindiv{
-        height: 28vw;
+        height: fit-content;
     /* background-color: pink; */
     border-radius: 12px;
     border: 1px solid gray;
     width: 20vw;
+    /* background-color: red; */
+    /* margin-bottom: vw; */
 }
 
 .cardup{
     width:100%;
-    height: 50%;
+    height: 40%;
     /* background-color: aquamarine; */
     border-radius: 12px 12px 0 0 ;
 }
 
 .cardlow{
     width: 100%;
-    height: 50%;
+    height: 60%;
     /* background-color: yellow; */
 }
 
 .lowup{
    width: 90%;
-   height: 60%;
+   height: fit-content;
    /* background-color: violet; */
    margin-left: 1.2vw;
    padding-top: .5vw;
@@ -87,7 +90,7 @@
 
 .lowdown{
     width: 100%;
-    height: 40%;
+    height: fit-content;
     /* background-color: turquoise; */
     padding-left: 1.5vw;
     padding-top: .5vw;
@@ -103,7 +106,10 @@
     padding-top: .5vw;
     width: 50%;
 }
-
+.arrow{
+    margin-bottom: 2vw;
+    /* background-color: red; */
+}
 .lowrighty button{
     width: 3vw;
     height: 3vw;

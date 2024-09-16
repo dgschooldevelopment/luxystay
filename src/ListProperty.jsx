@@ -16,7 +16,7 @@ import { IoIosArrowForward } from "react-icons/io";
 function ListProperty() {
   return (
     <>
-      <Nav  />
+      <Nav />
       <List></List>
       <Partner></Partner>
       <Partnerone></Partnerone>

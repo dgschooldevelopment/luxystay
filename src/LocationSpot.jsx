@@ -87,7 +87,7 @@ const totalDest = [
   0
 ];
 
-const LocationSpot = () => {
+const   LocationSpot = () => {
   return (
     <div className={styles.loactionMain}>
       <div className={styles.gallery}>

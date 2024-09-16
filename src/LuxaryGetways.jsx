@@ -8,8 +8,6 @@ import Luxury from "./components/Luxury";
 export default function LuxaryGetways() {
   return (
     <>
-      {/* <Nav></Nav> */}
-      {/* <Swipe></Swipe> */}
       <Luxury></Luxury>
     </>
   );

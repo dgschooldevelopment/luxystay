@@ -1,6 +1,7 @@
 .Swthree{
     /* background-color: red; */
     width: 88%;
+    margin-top: 8vw;
     /* width: 20vw; */
     /* height: 10vw; */
 }
@@ -72,7 +73,7 @@
     /* background-color: red; */
 }
 .heading2{
-    margin-top: 5vw;
+    /* margin-top: vw; */
     /* margin-left: 7%; */
     font-size: 1.3vw;
     font-weight: 500;
@@ -85,15 +86,15 @@
         margin: 0%;
         width: 95%;
         margin-left: 3%;
-
+        margin-top: 5vh;
     }
     .aboutdiv{
         height: 25vh;
-        width: 17vh;
+        width: 10vh;
         padding-left: 5vh;
     }
     .overlay{
         height: 25vh;
-        width: 17vh;
+        width: 15vh;
     }
 }

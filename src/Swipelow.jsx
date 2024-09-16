@@ -152,7 +152,7 @@ let Swipelow = () => {
                           <p>{item.tax}</p>
                         </div>
                         <div className={styles.lowrighty}>
-                          <button>
+                          <button className={styles.arrow} style={{color:"black"}}>
                             <FaArrowRight />
                           </button>
                         </div>

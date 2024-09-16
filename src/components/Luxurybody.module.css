@@ -1,55 +1,54 @@
-.body{
-    width:100%;
-    height: 520vw;
-    /* background-color: red; */
-    padding-top: 7vw;
+.body {
+  width: 100%;
+  height: 465vw;
+  /* background-color: red; */
+  padding-top: 5vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftbody {
+  width: 20%;
+  height: 100%;
+  /* background-color: crimson; */
+  /* overflow-x: auto; */
+}
+
+.leftbody p {
+  font-size: 1vw;
+}
+
+.leftbody h5 {
+  font-size: 1.5vw;
+}
+.rightbody {
+  width: 80%;
+  height:99.5%;
+   /* background-color: yellow;  */
+  margin-left: 20%;
+  padding-top: 1vw;
+}
+
+@media (min-width: 1px) and (max-width: 425px) {
+  .body {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: row;
-}
+    flex-direction: column;
+    /* background-color: red; */
+  }
 
-.leftbody{
-    width: 20%;
+  .leftbody {
     height: 100%;
-    /* background-color: crimson; */
-    position: fixed;
-    overflow: auto;
-}
+    /* background-color: aqua; */
+    display: none;
+  }
 
-.leftbody p{
-    font-size: 1vw;
-}
-
-.leftbody  h5{
-    font-size: 1.5vw;
-}
-.rightbody{
-    width: 80%;
+  .rightbody {
+    margin-left: 0;
+    width: 100%;
+    /* background-color: cadetblue; */
     height: 100%;
-    /* background-color: yellow; */
-    margin-left: 20%;
-    padding-top: 1.5vw;
-}
-
-
-@media (min-width:1px) and (max-width:425px) {
-    .body{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        /* background-color: red; */
-    }
-
-    .leftbody{
-        height: 100%;
-        /* background-color: aqua; */
-        display: none;
-    }
-
-    .rightbody{
-        margin-left: 0;
-        width: 100%;
-        /* background-color: cadetblue; */
-        height: 100%;
-    }
+    padding: 0;
+  }
 }

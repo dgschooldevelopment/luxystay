@@ -1,12 +1,13 @@
 import styles from "./Leftbody.module.css"
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 
 let Leftbody = () =>{
   
 return <>
 
 <div className={styles.leftup}>
-      <a href="#">Home</a>
+     <NavLink to="/">Home</NavLink>
       <MdKeyboardArrowRight  className={styles.icon}/>
        <p>Villas in Luxury Collection</p>
 </div>
@@ -70,7 +71,7 @@ return <>
                   <h5>Selected Filters</h5>
                   <p>Clear All</p>
             </div>
-            <button>All Results</button>
+            <button className={styles.results}>All Results</button>
          </div>
 </div>
 

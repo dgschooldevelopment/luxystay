@@ -8,7 +8,7 @@ return <>
 
 <div className={styles.body}>
 
-<div className={styles.leftbody}>
+<div className={styles.leftbody} style={{position:"fixed", overflow:"auto",backgroundColor:"white"}}>
 <Leftbody></Leftbody>
 </div>
 

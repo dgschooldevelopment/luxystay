@@ -5,12 +5,7 @@
     margin-left: 6%;
     height: fit-content;
     padding: 1vw 0vw;
-    margin-top: 3vh;
-}
- .imges{
-    padding-right: 2vw;
-    padding-left: 2vw;
-    /* border-radius: 2.4vw; */
+    margin-top: 15vh;
 }
 @media (min-width:1px) and (max-width:425px) {
     .lastswiper{

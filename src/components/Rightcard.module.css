@@ -1,8 +1,16 @@
+.cardiv{
+    width: 95%;
+    height: 98%;
+    /* background-color: cadetblue; */
+    margin-left: 2vw;
+}
+
 .card{
-    width: 100%;
-    height: 25vw;
+    width: 95%;
+    height: 22vw;
     /* background-color: red; */
     padding:0 2vw;
+    /* margin-left: 2vw; */
 }
 
 .firstcard{
@@ -35,7 +43,7 @@
 
 
 .name{
-    width: 100%;
+    width: 95%;
     height: 20%;
     /* background-color: gold; */
     display: flex;
@@ -48,7 +56,7 @@
 }
 
 .location{
-    width: 100%;
+    width: 95%;
     height: 10%;
     /* background-color: goldenrod; */
     padding-left: 1vw;
@@ -56,7 +64,7 @@
     align-items: flex-start;
     justify-content: space-between;
     padding-right: 1vw;
-    padding-top: .3vw;
+    padding-top: .4vw;
 }
 
 .location p{
@@ -66,20 +74,24 @@
     width: 1vw;
 }
 .guest{
-    width: 100%;
+    width: 95%;
     height: 10%;
     /* background-color: red; */
     padding-left: 1vw;
     display: flex;
-    padding-top: .3vw;
+    padding-top: .6vw;
     margin-top: .5vw;
+
 }
 
 .guest p{
     font-size: 1vw;
 }
 .guest img{
-    padding: .5vw;
+    /* margin-top: .5vw; */
+    width: 1vw;
+    height: 1vw;
+    padding-left: .5vw;
 }
 
 .great{
@@ -114,21 +126,21 @@
 
 .midlow{
     width: 100%;
-    height: 40%;
+    height: 30%;
     /* background-color: aquamarine; */
     margin-top: .3vw;
     display: flex;
 }
 
 .lowcard{
-    width: 15%;
+    width: 17%;
     height: 100%;
     /* background-color: crimson; */
 }
 
 .lowcard img{
-    width: 3vw;
-    height: 3vw;
+    width: 2.1vw;
+    height: 2.1vw;
     border: 1px solid black;
     padding: .5vw;
     border-radius: 7px;
@@ -150,8 +162,10 @@
 .cardright{
     width: 20%;
     height: 100%;
-    padding-top: 10vw;
+    padding-top: 9vw;
     padding-left: 1.5vw;
+    /* padding-bottom: 5vw; */
+    /* background-color: aqua; */
 }
 
 .cardright h4{
@@ -160,7 +174,7 @@
 } 
 
 .cardbtn{
-    padding: .5vw;
+    /* padding: .5vw; */
     outline: none;
     border: 1px solid #007bff;
     background: none;
@@ -169,6 +183,7 @@
     width: 12vw;
     height: 3.1vw;
     font-size: 1vw;
+    color: #000;
 }
 
 .cardbtn1{
@@ -184,23 +199,35 @@
 }
 
 .cardbtn img{
-     width: 1.5vw;
+     width: 1vw;
+     /* margin-top: .5; */
 }
 
 .cardright p{
     font-size: .9vw;
     color: #c3c3c3;
     font-weight: 500;
-    margin-top: .5vw;
+    margin-top: .8vw;
+    margin-left: 2vw;
 }
 
 
 @media (min-width:1px) and (max-width:425px)
 {
+
+    .cardiv{
+        width: 95%;
+        height: 1230vh;
+        /* background-color: red; */
+        margin: 0;
+        padding: 0;
+    }
+
     .card{
         width: 100%;
-        height: 60vh;
+        height: 65vh;
         /* background-color: red; */
+        padding-right: 5vh;
     }
 
     .firstcard{
@@ -208,7 +235,8 @@
         height: fit-content;
         display: flex;
         flex-direction: column;
-        margin-left: 2.5vh;
+        margin-left: 2vh;
+        /* background-color: red; */
     }
 
     .cardleft{
@@ -222,12 +250,13 @@
     .cardmid{
         width: 100%;
         height: 25vh;
-        /* background-color: red; */
+        /* background-color: crimson; */
         /* margin-top: 10vh; */
     }
 
     .guest{
         margin-top: 2vh;
+        /* background-color: crimson; */
     }
 
     .great{
@@ -259,12 +288,12 @@
     }
 
     .lowcard img{
-        width: 5vh;
-        height: 5vh;
+        width: 3vh;
+        height: 3vh;
     }
 
     .cardright{
-        width: 100%;
+        width: 92%;
         display: flex;
         flex-direction: row-reverse;
         margin: 0;
@@ -272,6 +301,7 @@
         height: 8vh;
         margin-top: 3vh;
         padding-right: 3vh;
+        /* background-color: cadetblue; */
     }
 
     .btn1{
@@ -291,7 +321,7 @@
     }
 
     .cardbtn img{
-        width: 3vh;
+        width: 2vh;
     } 
 
     .cardright h4{

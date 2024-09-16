@@ -5,7 +5,7 @@ import App from './App';
 import ListProperty from './ListProperty';
 import HomePage from './HomePage';
 import LuxaryGetways from './LuxaryGetways';
-import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 const router = createBrowserRouter([
   {
     path: '/',

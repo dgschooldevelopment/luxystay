@@ -1,11 +1,19 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
 .maindiv{
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
+  margin: 0%;
+  padding: 0%;
+  position: relative;
 }
-.aniket{
+/* .aniket{
   height: 100vw;
   width: 100%;
-}
+} */
 .heading{
   margin-top: 5vw;
   margin-left: 8%;
@@ -17,3 +25,11 @@
   font-weight: 500;
 
 }
+
+.contact{
+  position: absolute;
+  left: 10%;
+  margin-left: 20vw;
+}
+
+
