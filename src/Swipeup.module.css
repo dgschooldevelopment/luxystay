@@ -1,27 +1,24 @@
-.up{
+.up {
     width: 100%;
-    height: 9vw;
+    height: 7vw;
     background-color: white;
-    /* margin-top: 10vw; */
     padding-top: .5vw;
 }
 
-.header{
+.header {
     font-size: 1.8vw;
     margin-left: 7vw;
 }
 
-
-.low{
-    width: 90%;
+.low {
+    width: 100%;
     height: 3.8vw;
-    /* background-color: crimson; */
-    padding-left: 6vw;
     display: flex;
+    padding-left: 6vw;
     padding-top: .3vw;
 }
 
-.btn{
+.btn {
     padding: .2vw 1.2vw;
     width: fit-content;
     height: 2.7vw;
@@ -33,51 +30,13 @@
     background-color: #fafbfc;
 }
 
-.btn:hover{
+.btn:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: 300ms;
 }
-@media (min-width:1px) and (max-width:425px) {
-    .up{
-        /* background-color: yellow; */
-        height: fit-content;
-    }
-    .header{
-        font-size: 6vw;
-        font-weight: 500;
-        margin: 0%;
-        margin-left: 2vh;
-    }
-    .low{
-        /* background-color: forestgreen; */
-        height: 8vh;
-        width: 100%;
-        overflow-x: auto;
-        margin: 0%;
-        padding: 0%;
-        
-    }
-    .btn{
-        height: 5vh;
-        font-size: 2vh;
-        border-radius: 5px;
-        margin: 0%;
-        margin-top: 2vh;
-        border: solid #bababa 2px;
-        margin-left: 1vh;
-        margin-right: 0.5vh;
-        padding-left: 2vh;
-        padding-right: 2vh;
-        padding: 1vh;
-        font-weight: 500;
-        /* padding-bottom: 1vh; */
-    }
-    .btn:hover{
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        transition: 300ms;
-        background-color: #49a5c1;
-        color: #007bff;
-        border: #007bff solid 2px;
-    }
-    
+
+.selected {
+    color:black;  /* Font color of the selected button */
+    background-color: rgb(150, 211, 235);
+    border-color: #308be6;  /* Background color of the selected button */
 }

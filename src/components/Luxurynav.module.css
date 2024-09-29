@@ -99,6 +99,82 @@
  display: none;
 }
 
+.inputFieldContainer {
+    /* Existing styles */
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .luxuryInputField {
+    /* Custom styles specific to Luxurynav */
+    position: fixed;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+  left: 0px;
+    top: 4rem /* Add any other custom styles here */;
+   
+}
+.btnEnter {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  
+  .btnEnterActive {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .btnExit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .btnExitActive {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  /* InputField Transition Classes */
+  .inputEnter {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  .inputEnterActive {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .inputExit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .inputExitActive {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  /* Optional: Transition for the inputFieldContainer background or other styles */
+  .inputFieldContainer {
+    /* Existing styles */
+    padding: 10px;
+    background-color: #f9f9f9;
+    /* Add position and z-index if needed to overlay smoothly */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
 @media (min-width:1px) and (max-width:425px){
 
     *{

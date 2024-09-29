@@ -1,10 +1,13 @@
 .addblock{
+  display: flex;
+  align-items:center ;
+  justify-content: center;
     height:fit-content;
-    width:fit-content;
-    margin-left: 9%;
+    /* width:fit-content; */
+    /* margin-left: 9%; */
     /* background-color: black; */
     cursor: pointer;
-    margin-top: 5vw;
+    margin-top: 2vw;
 }
 .addblock img{
     border-radius: 10px;

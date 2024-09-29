@@ -25,11 +25,20 @@
 }
 
 .leftlow{
-    width: 100%;
-    height: 99%;
+    /* width: 100%; */
+    /* height: 99%; */
     /* background-color: aqua; */
-    border-right: 1px solid #c3c3c3;
-    margin-left: 1vw;
+    /* border-right: 1px solid #c3c3c3;
+    margin-left: 1vw; */
+
+        width: 100%;
+        height: 99%;
+        border-right: 3px solid #c3c3c3;
+        margin-left: 1vw;
+        min-width: 6px; /* Adjust this value based on your requirements */
+        overflow-x: hidden; /* Ensure horizontal scroll if the content overflows */
+    
+    
 }
 
 
@@ -79,11 +88,12 @@
 }
 
 .slideprize{
-    width: 90%;
+    width: 68%;
     height: .27vw;
-    background-color: black;
+    /* background-color: black; */
     margin-top: 3vw;
     position: relative;
+    margin-left: 2rem;
 }
 
 .leftprize{
@@ -95,6 +105,7 @@
     top: 5.1vw;
     left: .8vw;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
 }
 
 .rightprize{
@@ -104,8 +115,9 @@
     border-radius: 50%;
     position: absolute;
     top: 5.1vw;
-    right: .8vw;
+    right: 5.8vw;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
 }
 
 .rate{
@@ -138,6 +150,8 @@
     border: 1px solid black;
     border-radius: 5px;
     background: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
     background-color: white;
     font-size: 1vw;
     color: #000;
@@ -260,14 +274,22 @@
     height: 60%;
     /* background-color: blueviolet; */
     display: flex;
+    align-items: center;
     justify-content: space-around;
     padding-top: .5vw;
+    
 }
 
 .lowupper p{
     font-size: 1.3vw;
+    
 }
 
+.lowupper p:hover {
+    background-color: lightgray;
+    cursor: pointer;
+    transition: background-color 0.3s;  /* Change background color on hover */
+}
 .rightlow button{
     width: fit-content;
     padding: .5vw;
@@ -278,4 +300,25 @@
     color: #000;
     font-size: 1vw;
 }
+.btnn:hover {
+    background-color: black; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+.rc-slider-track, .rc-slider-tracks {
+    position: absolute;
+    height: 4px;
+    background-color: black !important;  /* Ensure the black background is applied */
+    border-radius: 6px;
+}
 
+.rc-slider-handle {
+    border: solid 2px #352924 !important;
+}/* In your CSS module (e.g., styles.module.css) */
+.sliderCustom {
+    background-color: #f0f0f0; /* Change this to your desired background color */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    height: 10px; /* Optional: Adjust height for better visibility */
+}
+.MuiSlider-valueLabelLabel{
+    color: #000 !important;
+}

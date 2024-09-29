@@ -13,7 +13,7 @@ function Swipe() {
     <>
       <div className={styles.swipediv}>
         <Swipeup></Swipeup>
-        <Swipelow></Swipelow>
+        {/* <Swipelow></Swipelow> */}
       </div>
     </>
   );

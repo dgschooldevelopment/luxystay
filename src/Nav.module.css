@@ -1,5 +1,8 @@
-.btn{
-    margin-right: 2.5vw;
+/* Nav.module.css */
+
+/* Base Button Styles */
+.btn {
+    margin-right: 0.5vw;
     padding: 0 1.2vw;
     width: fit-content;
     border-radius: 5px;
@@ -9,180 +12,372 @@
     border: 2px solid #bababa;
     font-size: 0.9vw;
     font-weight: 600;
-    color: gray
-    /* animation-name: color;
-    animation-timeline: scroll(); */
-
-}
-.navlink{
- /* color: gray; */
- text-decoration: none;
- color: #f8d1a6;
-}
-.navbar{ 
-
-    background-color: white;
-    /* padding-bottom: .5vw; */
-  height: 5vw;
+    color: rgb(247, 242, 242);
+    transition: color 0.5s ease, border-color 0.5s ease;
+    cursor: pointer;
+  }
+  
+  /* NavLink Styles */
+  .navlink {
+    text-decoration: none;
+    color: #f8d1a6;
+    transition: color 0.5s ease;
+  }
+  
+  .navlink:hover {
+    color: #c89b76; /* Optional hover effect */
+  }
+  
+  /* Navbar Container */
+  .navbar {
+    transition: background-color 0.5s ease;
+    background-color: transparent; /* Default background */
     position: fixed;
+    top: 0;
     width: 100%;
     height: fit-content;
     display: flex;
     align-items: center;
-    /* padding-top: 5vw; */
-    box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px, rgba(0, 0, 0, 0.2) 0px 8px 16px -8px;
-     /* animation-name: transperant; 
-    animation-timeline: scroll();  */
-    /* transition: 400ms; */
+    /* box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px, 
+                rgba(0, 0, 0, 0.2) 0px 8px 16px -8px; */
     z-index: 12;
-    /* position: relative; */
-}
-.image{
-    /* background-color: red; */
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Navbar Scrolled State */
+  .scrolled {
+    background-color: white; /* Background when scrolled */
+  }
+  
+  /* Text Color When Scrolled */
+  .scrolledText {
+    color: black !important; /* Text color when scrolled */
+  }
+  
+  /* Luxury Button Specific Styles */
+  .luxuryButton {
+    background-color: rgb(8, 8, 8);
+    background-image: linear-gradient(
+      90deg, 
+      rgba(8, 8, 8, 1) 35%, 
+      rgba(102, 98, 94, 1) 49%, 
+      rgba(0, 0, 0, 1) 70%
+    );
+    color: #f8d1a6;
+    font-size: 0.9vw;
+    font-weight: 600;
+    border: 1px solid #fdd5a9;
+    transition: color 0.5s ease, border-color 0.5s ease;
+  }
+  
+  /* Logo Section */
+  .logoimg {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image {
     position: absolute;
-}
- .navitems{
-    margin-left: 32vw;
+    margin-left: 0.9rem;
+    bottom: 0.1px;
+    height: 5vw;
+    width: auto;
+  }
+  
+  /* Navigation Items */
+  .navitems {
+    margin-left: 35vw;
     width: 70%;
-/* background-color: red; */
-margin-bottom: 1vw;
-}
-
-
-
-.icons{
+    margin-bottom: 1vw;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Icons */
+  .icons {
     font-size: 2.3vw;
     margin-left: 1.5vw;
-    /* padding-top: 1.2vw; */
+    color: aliceblue;
+  }
+  .scrolled .icons {
+    color: #333333; /* Change icon color to a darker shade */
+    transition: color 0.5s ease; /* Smooth color transition */
 }
-.down{
-    /* display: block; */
-    height: 4vw;
-    width: 100%;
-    background-color: red;
-    position: fixed;
-    top: 5%;
-    z-index: 10;
-    display: none;
-   }
-   .menu{
-    display: none;
-   }
-@keyframes transperant{
-    0%{
-        background-color: transparent;
-    }
-
-    20%{
-       background-color: white;
-       
-    }
-    
-   
-}
-
-@keyframes color{
-    0%{
-        color: white;
-    }
-
-    100%{
-       color: black;
-       
-    }
-}
-
-@media (min-width:1px) and (max-width:425px) {
-.bell{
-        display: none;
-    }
-    .icons{
-        display: none;
-    }
-    .navbar{
-        /* display: none; */
-        height: 10vh;
-        color: black;
-       display: flex;
-       justify-content: flex-end;
-    }
-    .image{
-        display: block;
-    }
-    .navitems{
-        display: none;
-    }
-    .navlink{
-        display: block;
-    }
-   .ans{
+  /* Bell Icon - Hidden by default */
+  .bell {
     display: block;
-    height: 5vh;
-    width: 3vh;
-    color: black;
-    border-radius: 10vw;
-   }
-   .navlink{
-    font-size: 2vh;
-   }
-   .btn{
-    height: 4vh;
-    
-   }
-   .none{
-    display: none;
-   }
-   .down{
-    display: none;
+
+  }
+  
+  /* Mobile Menu Overlay */
+  .down {
     height: 100vh;
     width: 75%;
-    /* background-color: red; */
+    background-color: red;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 13;
-    /* top: 10%; */
-    margin-left: 25%;
-    top: 0%;
-   }
-   .top{
+    display: none;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%); /* Hidden by default */
+  }
+  
+  /* Show Mobile Menu */
+  .showDown {
+    display: block;
+    transform: translateX(0); /* Slide in */
+  }
+  
+  /* Menu Icon */
+  .menu {
+    display: none;
+    font-size: 4vh;
+    cursor: pointer;
+  }
+  
+  /* Close Icon in Mobile Menu */
+  .close {
+    font-size: 3vh;
+    margin-top: 2vh;
+    margin-right: 1vh;
+    cursor: pointer;
+  }
+  
+  /* Top Section of Mobile Menu */
+  .top {
     height: 17%;
     background-color: black;
     color: white;
     display: flex;
-    /* align-items: center; */
     justify-content: flex-end;
-   }
-   .close{
-    /* height: 4vh; */
-    font-size: 3vh;
-    margin-top: 2vh;
-    margin-right: 1vh;
-   }
-   .whitedown{
-    background-color:white;
+  }
+  
+  /* Content Section of Mobile Menu */
+  .whitedown {
+    background-color: white;
     height: 83%;
-    display:flex;
+    display: flex;
     flex-direction: column;
-   }
-  .link{
+  }
+  
+  /* Links in Mobile Menu */
+  .link {
     height: 37%;
     width: 80%;
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
     justify-content: space-around;
     padding-left: 20%;
   }
-  #listur{
-    color: #000;
-  }
-  .links{
+  
+  /* Individual Links */
+  .links {
     color: black;
     text-decoration: none;
     font-weight: 500;
     font-size: 2.2vh;
+    transition: color 0.5s ease;
   }
-  .menu{
+  
+  .links:hover {
+    color: #f8d1a6; /* Optional hover effect */
+  }
+  
+  /* Explore Icon within Button */
+  .exploreIcon {
+    margin-left: 1vw;
+    width: 2vh;
+  }
+  /* Nav.module.css */
+
+/* ... existing styles ... */
+
+/* Bell Icon Styling */
+.bellIcon {
+    font-size: 2.3vw;
+    margin-left: 1.5vw;
+    color: aliceblue; /* Default color */
+    transition: color 0.5s ease;
+    cursor: pointer;
+  }
+  
+  .scrolled .bellIcon {
+    color: #333333; /* Color when scrolled */
+  }
+  
+  /* Hover Effect */
+  .bellIcon:hover {
+    color: #f8d1a6; /* Hover color */
+  }
+  
+  /* Badge for Unread Notifications */
+  .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    font-size: 0.7vw;
+  }
+  
+  /* Notification Dropdown */
+  .notificationDropdown {
+    position: absolute;
+    top: 60px; /* Adjust based on navbar height */
+    right: 0; /* Align with bell icon */
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    display: none; /* Hidden by default */
+    z-index: 20;
+  }
+  
+  .showDropdown {
     display: block;
-    font-size: 4vh;
   }
-   }
+  
+  /* Notification Item */
+  .notificationItem {
+    padding: 10px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  .notificationItem:last-child {
+    border-bottom: none;
+  }
+  .navlinkButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* Add any additional button styles as needed */
+    color: #f8d1a6; /* Desired font color */
+    transition: color 0.5s ease, border-color 0.5s ease;
+    text-decoration: none;
+    font-size: 0.9vw;
+    font-weight: 600;
+}
+
+/* Hover Effect */
+.navlinkButton:hover {
+    color: #c89b76; /* Desired hover color */
+}
+  /* ... existing styles ... */
+  
+  
+  /* Responsive Styles for Mobile Devices */
+  @media (min-width: 1px) and (max-width: 425px) {
+    /* Hide Bell and Icons */
+    .bell {
+      display: none;
+    }
+  
+    .icons {
+      display: none;
+    }
+  
+    /* Adjust Navbar */
+    .navbar {
+      height: 10vh;
+      justify-content: space-between;
+      padding: 0 1rem;
+    }
+  
+    /* Show Menu Icon */
+    .menu {
+      display: block;
+    }
+  
+    /* Show Logo Image */
+    .image {
+      display: block;
+    }
+  
+    /* Hide Navigation Items */
+    .navitems {
+      display: none;
+    }
+  
+    /* Adjust NavLink Styles */
+    .navlink {
+      display: block;
+      font-size: 2vh;
+    }
+  
+    /* Adjust Button Styles */
+    .btn {
+      height: 4vh;
+      padding: 0 1vw;
+      font-size: 2vh;
+    }
+  
+    /* Mobile Menu Adjustments */
+    .down {
+      width: 75%;
+      margin-left: 25%;
+      top: 0;
+      transform: translateX(-100%);
+    }
+  
+    .showDown {
+      transform: translateX(0);
+    }
+  
+    /* Top Section of Mobile Menu */
+    .top {
+      height: 17%;
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    /* Close Icon in Mobile Menu */
+    .close {
+      font-size: 3vh;
+      margin-top: 2vh;
+      margin-right: 1vh;
+      cursor: pointer;
+    }
+  
+    /* Content Section of Mobile Menu */
+    .whitedown {
+      background-color: white;
+      height: 83%;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* Links in Mobile Menu */
+    .link {
+      height: 37%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding-left: 20%;
+    }
+  
+    /* Individual Links */
+    .links {
+      color: black;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 2.2vh;
+      transition: color 0.5s ease;
+    }
+  
+    .links:hover {
+      color: #f8d1a6; /* Optional hover effect */
+    }
+  }
+  

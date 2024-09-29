@@ -5,6 +5,7 @@ import App from './App';
 import ListProperty from './ListProperty';
 import HomePage from './HomePage';
 import LuxaryGetways from './LuxaryGetways';
+import HotelPage from './components/HotelPage';
 // import 'bootstrap/dist/css/bootstrap.min.css'
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
         path: '/listur',
         element: <ListProperty />,
       },
+      {
+        path: 'hotelpage/:hotelId',  
+        element: <HotelPage/>
+      }
     ],
   },
 ]);

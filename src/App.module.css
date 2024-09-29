@@ -2,6 +2,14 @@
   margin: 0%;
   padding: 0%;
 }
+/* index.css or App.css */
+body {
+  font-family: 'Inter', sans-serif; /* Set the font family globally */
+  margin: 0; /* Optional: reset margin */
+  padding: 0; /* Optional: reset padding */
+  font-style: normal;
+}
+
 .maindiv{
   height: 100%;
   width: 100%;

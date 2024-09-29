@@ -1,3 +1,6 @@
+/* InputField.module.css */
+
+/* Container for the entire input field section */
 .inputField {
   height: 6vw;
   width: 84%;
@@ -7,35 +10,244 @@
   left: 8%;
   border-radius: 10px;
   z-index: 10;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+              rgba(0, 0, 0, 0.23) 0px 3px 6px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
+
+/* Container for each individual field */
+.fieldContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the label and input horizontally */
+  width: 15%; /* Adjust width based on screen */
+  position: relative; /* To position the label absolutely within the container */
+}
+
+/* Label Styling */
+.label {
+  position: absolute;
+  top: -12px; /* Adjusted to ensure the label sits neatly above the input */
+  background: #fff;
+  padding: 0 4px; /* Horizontal padding to prevent overlap with input border */
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  color: #000;
+  left: 40%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the label */
+}
+
+/* Input Fields */
 input {
-  height: 70%;
-  width: 15%;
-  padding: 0 1%;
+  height: 48px;
+  width: 100%; /* Make input field fill its container */
+  padding: 0 12px; /* Increased padding for better text spacing */
+  background-color: #f2f2f2;
+  border: #d8e0d8 solid 2px;
+  border-radius: 5px;
+  cursor: text; /* Changed to 'text' for better user indication */
+  outline: none;
+  font-size: 14px;
+  box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+}
+
+/* Select Dropdowns */
+.select {
+  height: 48px;
+  width: 100%;
+  padding: 0 12px;
   background-color: #f2f2f2;
   border: #d8e0d8 solid 2px;
   border-radius: 5px;
   cursor: pointer;
   outline: none;
+  font-size: 14px;
+  appearance: none; /* Removes default arrow */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5"><polygon points="0,0 10,0 5,5" fill="%23000"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 10px 5px;
 }
-.searchButton {
-  height: 70%;
-  width: 18%;
-  background-color: black;
+
+/* Container for Guests and Rooms Selectors */
+.guestsRoomsContainer {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  gap: 8px;
+  width: 100%;
+}
+
+/* Search Button */
+.searchButton {
+  display: flex;
   justify-content: center;
-  color: white;
+}
+
+.searchButton button {
+  padding: 12px 24px; /* Slightly larger padding for a more luxurious feel */
+  background-color: #111111; /* Darker background for a modern look */
+  color: #ffffff; /* White text for contrast */
+  border: none; /* Removing default borders */
+  border-radius: 8px; /* Smooth corners */
+  font-size: 18px; /* Larger font for emphasis */
+  font-family: 'Inter', sans-serif; /* Clean and modern font */
+  font-weight: 600; /* Bold weight */
+  line-height: 22px; /* Line height for better text readability */
+  text-align: center; /* Centering the text */
+  cursor: pointer; /* Making the button clickable */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for hover effects */
+  width: 100%; /* Full width for button */
+  max-width: 200px; /* Restricting max width */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; 
+  margin-top: 0px;
+  height: 48px;/* Center text vertically */
+}
+
+.searchButton button:hover {
+  background-color: #333333; /* Darker on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Suggestions Dropdown */
+.suggestions {
+  background-color: white;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  top: 3.5vw;
+  width: 184%;
+  left: 8%;
+  z-index: 1000;
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+              rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.suggestions li {
+  padding: 10px 12px;
   cursor: pointer;
 }
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
+}
+/* Add this to InputField.module.css */
+
+/* Center the count span between the buttons */
+.counter {
+  display: flex;
+  align-items: center; /* Vertically centers items */
+  justify-content: space-between; /* Creates space between the buttons and the span */
+}
+
+.count {
+  
+  margin: 0 10px;
+    font-weight: bold;
+    text-align: center;
+    width: 30px;
+    margin-bottom: -10px;
+    color: #00000083;/* Fixed width for a consistent appearance */
+}
+
+
+/* Responsive Styles for Mobile Devices */
 @media (min-width: 1px) and (max-width: 425px) {
   .inputField {
-    display: none;
+    top: 50vh;
+    left: 5%;
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+    padding: 2% 0;
+  }
+  
+  .fieldContainer {
+    width: 80%; /* Increased width for mobile */
+    margin-bottom: 16px;
+  }
+
+  .label {
+    top: -10px; /* Adjusted top for mobile */
+    font-size: 14px; /* Increased font size for better readability */
+  }
+
+  input, .select {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .guestsRoomsContainer {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .searchButton {
+    width: 80%;
+  }
+
+  .suggestions {
+    top: auto;
+    width: 90%;
+    left: 5%;
   }
 }
+.guestRoomDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 344px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.counterContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.counter button {
+  width: 30px;
+  height: 30px;
+  /* border: none; */
+  border-color: #000;
+  background-color: #fefeff;
+  color: rgb(10, 10, 10);
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 0px;
+}
+
+.counter button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+

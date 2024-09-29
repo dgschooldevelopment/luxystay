@@ -1,0 +1,54 @@
+.option{
+    width: 95%;
+    height: 50px;
+    /* background-color: red; */
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3%;
+
+}
+.option p{
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+}
+span{
+    color: #3280ec;
+}
+.broucher{
+    background-color: white;
+    color: black;
+    border: 1.6px solid pink;
+    width: 150px;
+    height: 70%;
+    margin-right: 100px;
+    padding: 10px 0%;
+    border-radius: 5px;
+    /* padding: 20px; */
+}
+.Allimg{
+    height: 520px;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 9px;
+    padding-top: 5%;
+    padding-left: 5%;
+    display: flex;
+}
+.Allimgleft{
+    width: 53%;
+    height: 90%;
+    /* background-color: yellow; */
+    /* padding-left: 5%; */
+    /* padding-top: 10px; */
+
+}
+.Allimgright{
+    width: 40%;
+    height: 90%;
+    margin-left: -1%;
+/* background-color: #3280ec; */
+
+}

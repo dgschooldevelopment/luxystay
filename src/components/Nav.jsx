@@ -9,7 +9,9 @@ let Nav = () => {
   
   <nav class="navbar bg-body-tertiary" className={styles.navbar}>
   <div class="container-fluid">
-    <a class="navbar-brand"><img src={img3} alt="" className={styles.image} /></a>
+    <div className={style.Icon}>
+    <a class="navbar-brand" ><img src={img3} alt="" className={styles.image} /></a>
+    </div>
     <form class="d-flex" role="search">
         <div className={styles.navitems}>
         <button className={styles.btn}  style={{border:'none', fontSize:'1.3vw'}}>Explore

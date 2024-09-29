@@ -1,4 +1,18 @@
 import styles from "./LocationSpot2.module.css";
+import Loimg1 from "./assets/locationImg01.svg";
+import Loimg2 from "./assets/locationImg02.svg";
+import Loimg3 from "./assets/locationImg03.svg";
+import Loimg4 from "./assets/locationImg04.svg";
+import Loimg5 from "./assets/locationImg05.svg";
+import Loimg6 from "./assets/locationImg06.svg";
+import Loimg7 from "./assets/locationImg07.svg";
+import Loimg8 from "./assets/locationImg08.svg";
+import Loimg9 from "./assets/locationImg09.svg";
+import Loimg10 from "./assets/locationImg10.svg";
+import Loimg11 from "./assets/locationImg11.svg";
+import Loimg12 from "./assets/locationImg12.svg";
+import Loimg13 from "./assets/locationImg13.svg";
+import Loimg14 from "./assets/locationImg14.svg";
 import Loimg15 from "./assets/locationImg15.svg";
 import Loimg16 from "./assets/locationImg16.png";
 import Loimg17 from "./assets/locationImg17.svg";
@@ -13,77 +27,41 @@ import Loimg25 from "./assets/locationImg25.svg";
 import Loimg26 from "./assets/locationImg26.svg";
 import Loimg27 from "./assets/locationImg27.svg";
 
-const totalDest2 = [
-  {
-    hotelimg: Loimg15,
-    hotelname: "jaipur",
-  },
-  {
-    hotelimg: Loimg16,
-    hotelname: "Delhi",
-  },
-  {
-    hotelimg: Loimg17,
-    hotelname: "Udaipur",
-  },
-  {
-    hotelimg: Loimg18,
-    hotelname: "jaipur",
-  },
-  {
-    hotelimg: Loimg19,
-    hotelname: "Delhi",
-  },
-  {
-    hotelimg: Loimg20,
-    hotelname: "Udaipur",
-  },
-  {
-    hotelimg: Loimg21,
-    hotelname: "Delhi",
-  },
-  {
-    hotelimg: Loimg22,
-    hotelname: "Udaipur",
-  },
-  {
-    hotelimg: Loimg23,
-    hotelname: "jaipur",
-  },
-  {
-    hotelimg: Loimg24,
-    hotelname: "Delhi",
-  },
-  {
-    hotelimg: Loimg25,
-    hotelname: "Udaipur",
-  },
-  {
-    hotelimg: Loimg26,
-    hotelname: "jaipur",
-  },
-  {
-    hotelimg: Loimg27,
-    hotelname: "Delhi",
-  },
-  {
-    hotelimg: Loimg18,
-    hotelname: "Udaipur",
-  },
+// Removed the unnecessary `0` item from the totalDest array.
+const totalDest = [
+  { hotelimg: Loimg1, hotelname: "Jaipur" },
+  { hotelimg: Loimg2, hotelname: "Delhi" },
+  { hotelimg: Loimg3, hotelname: "Udaipur" },
+  { hotelimg: Loimg4, hotelname: "Jaipur" },
+  { hotelimg: Loimg5, hotelname: "Delhi" },
+  { hotelimg: Loimg6, hotelname: "Udaipur" },
+  { hotelimg: Loimg7, hotelname: "Delhi" },
+  { hotelimg: Loimg8, hotelname: "Udaipur" },
+  { hotelimg: Loimg9, hotelname: "Jaipur" },
+  { hotelimg: Loimg10, hotelname: "Delhi" },
+  { hotelimg: Loimg11, hotelname: "Udaipur" },
+  { hotelimg: Loimg12, hotelname: "Jaipur" },
+  { hotelimg: Loimg13, hotelname: "Delhi" },
+  { hotelimg: Loimg14, hotelname: "Udaipur" },
 ];
 
-const LocationSpot2 = () => {
+const LocationSpot2 = ({ onLocationSelect }) => {
   return (
-    <div className={styles.loactionMain}>
+    <div className={styles.locationMain}>
       <div className={styles.gallery}>
-        {totalDest2.map((items) => (
-          <div key={items.hotelname}>
-            <img src={items.hotelimg} alt={items.hotelname} height={100} />
-            <h4 className={styles.hotelName}>{items.hotelname}</h4>
+        {totalDest.map((item) => (
+          <div 
+            key={item.hotelname} 
+            className={styles.locationItem} 
+            onClick={() => onLocationSelect(item.hotelname)}
+          >
+            <img src={item.hotelimg} alt={item.hotelname} height={100} />
+            <h4 className={styles.hotelName}>{item.hotelname}</h4>
           </div>
         ))}
       </div>
     </div>
   );
 };
+
 export default LocationSpot2;

@@ -1,158 +1,104 @@
 import styles from "./Swipelow.module.css";
 import { useSwiper } from "swiper/react";
-import React, { useRef, useState } from "react";
+import React, { useRef, useEffect, useState, useCallback } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import imgg1 from "./assets/pict2.svg";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-// import img1 from "../assets/pic1.jpg";
-import img2 from "./assets/pic2.jpg";
-import img3 from "./assets/pic3.jpg";
-import img4 from "./assets/pic4.jpg";
-import img5 from "./assets/pic5.jpg";
-import img6 from "./assets/pic6.jpg";
-import img7 from "./assets/pic7.jpg";
-import img8 from "./assets/pic8.jpg";
-import img9 from "./assets/pic9.jpg";
+import imgg1 from "./assets/pict2.svg"; // Location icon
 import { FaArrowRight } from "react-icons/fa6";
-let Swipelow = () => {
-  const sw = useSwiper();
 
-  let Swipepass = [
-    {
-      hotelname: "Casa Simoes-Candolim",
-      image: img2,
-      location: "Goa,Goa",
-      roomdesc: "Upto 7 Guests + 3 Rooms + 3 Baths",
-      prize: "₹56,383",
-      tax: "For Per Night + Taxes",
-    },
-    {
-      hotelname: "Casa Simoes-Candolim",
-      image: img2,
-      location: "Goa,Goa",
-      roomdesc: "Upto 7 Guests + 3 Rooms + 3 Baths",
-      prize: "₹56,383",
-      tax: "For Per Night + Taxes",
-    },
-    {
-      hotelname: "Casa Simoes-Candolim",
-      image: img3,
-      location: "Goa,Goa",
-      roomdesc: "Upto 7 Guests + 3 Rooms + 3 Baths",
-      prize: "₹56,383",
-      tax: "For Per Night + Taxes",
-    },
-    {
-      hotelname: "Casa Simoes-Candolim",
-      image: img4,
-      location: "Goa,Goa",
-      roomdesc: "Upto 7 Guests + 3 Rooms + 3 Baths",
-      prize: "₹56,383",
-      tax: "For Per Night + Taxes",
-    },
-    {
-      hotelname: "Casa Simoes-Candolim",
-      image: img5,
-      location: "Goa,Goa",
-      roomdesc: "Upto 7 Guests + 3 Rooms + 3 Baths",
-      prize: "₹56,383",
-      tax: "For Per Night + Taxes",
-    },
-    {
-      hotelname: "Casa Simoes-Candolim",
-      image: img6,
-      location: "Goa,Goa",
-      roomdesc: "Upto 7 Guests + 3 Rooms + 3 Baths",
-      prize: "₹56,383",
-      tax: "For Per Night + Taxes",
-    },
-    {
-      hotelname: "Casa Simoes-Candolim",
-      image: img7,
-      location: "Goa,Goa",
-      roomdesc: "Upto 7 Guests + 3 Rooms + 3 Baths",
-      prize: "₹56,383",
-      tax: "For Per Night + Taxes",
-    },
-    {
-      hotelname: "Casa Simoes-Candolim",
-      image: img8,
-      location: "Goa,Goa",
-      roomdesc: "Upto 7 Guests + 3 Rooms + 3 Baths",
-      prize: "₹56,383",
-      tax: "For Per Night + Taxes",
-    },
-    {
-      hotelname: "Casa Simoes-Candolim",
-      image: img9,
-      location: "Goa,Goa",
-      roomdesc: "Upto 7 Guests + 3 Rooms + 3 Baths",
-      prize: "₹56,383",
-      tax: "For Per Night + Taxes",
-    },
-  ];
+const Swipelow = ({ selectedLocation }) => {
+  const [hotels, setHotels] = useState([]); // State to store fetched hotels
+  const swiperRef = useRef(null);
+
+  // Fetch hotel data from API
+  useEffect(() => {
+    const fetchHotels = async () => {
+      try {
+        const response = await fetch("http://localhost:3001/hotellist");
+        const data = await response.json();
+        let filteredHotels = data.hotels;
+
+        if (selectedLocation !== "All") {
+          filteredHotels = data.hotels.filter((hotel) => {
+            return hotel.location.city === selectedLocation; // Filter hotels by selected location
+          });
+        }
+
+        setHotels(filteredHotels); // Store the filtered hotel data
+      } catch (error) {
+        console.error("Error fetching hotel data:", error);
+      }
+    };
+
+    fetchHotels();
+  }, [selectedLocation]); // Add selectedLocation as a dependency
 
   const breakpoints = {
-   320: {
-     slidesPerView: 1.5,
-   },
-   768: {
-     slidesPerView: 2,
-   },
-   1024: {
-     slidesPerView: 4,
-   },
- };   
+    320: { slidesPerView: 1.5 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 4 },
+  };
+
+  const handlePrev = useCallback(() => {
+    if (swiperRef.current) {
+      swiperRef.current.slidePrev();
+    }
+  }, []);
+
+  const handleNext = useCallback(() => {
+    if (swiperRef.current) {
+      swiperRef.current.slideNext();
+    }
+  }, []);
+
   return (
     <>
       <div className={styles.lowswipe}>
         <div className={styles.lowleft}>
-          <button
-            className={styles.btn}
-            onClick={() => swiperuseSwiper.current.sw.slidePrev()}
-          >
-            {" "}
-            {"<"}{" "}
+          <button className={styles.btn} onClick={handlePrev}>
+            {"<"}
           </button>
         </div>
         <div className={styles.lowmid}>
-          <>
-            <Swiper
-              slidesPerView={3.5}
-              modules={[Autoplay, Pagination, Navigation]}
-              className="mySwiper"
-              breakpoints={breakpoints}
-            >
-              {Swipepass.map((item) => (
-                <SwiperSlide
-                  className={styles.myswipe}
-                  style={{ width: "20vw" }}
-                >
+          <Swiper
+            onSwiper={(swiper) => (swiperRef.current = swiper)} // Initialize swiper instance
+            slidesPerView={3.5}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
+            breakpoints={breakpoints}
+          >
+            {hotels.length > 0 ? (
+              hotels.map((hotel, index) => (
+                <SwiperSlide key={index} className={styles.myswipe}>
                   <div className={styles.maindiv}>
                     <div className={styles.cardup}>
-                      {" "}
-                      <img src={item.image} alt="" />
+                      <img
+                        src={hotel.firstImage} // Use placeholder if no image
+                        alt={hotel.hotelName}
+                      />
                     </div>
                     <div className={styles.cardlow}>
                       <div className={styles.lowup}>
-                        <h3>{item.hotelname}</h3>
-                        <p>
+                        <h3 className={styles.hotelname}>{hotel.hotelName}</h3>
+                        <p className={styles.hotelCity}>
                           <img src={imgg1} alt="" />
-                          {item.location}
+                          {hotel.location.city || "Unknown Location"}
                         </p>
-                        <p>{item.roomdesc}</p>
+                        <p className={styles.hotelInfo}>
+                          {`Upto ${hotel.maxGuests} Guests + ${hotel.totalRooms} Rooms + ${hotel.totalBathrooms} Baths`}
+                        </p>
                       </div>
                       <div className={styles.lowdown}>
                         <div className={styles.lowlefty}>
-                          <h4>{item.prize}</h4>
-                          <p>{item.tax}</p>
+                          <h4>{hotel.pricePerNight ? `₹${hotel.pricePerNight}` : "Price N/A"}</h4>
+                          <p>For Per Night + Taxes</p>
                         </div>
                         <div className={styles.lowrighty}>
-                          <button className={styles.arrow} style={{color:"black"}}>
+                          <button className={styles.arrow} style={{ color: "black" }}>
                             <FaArrowRight />
                           </button>
                         </div>
@@ -160,20 +106,35 @@ let Swipelow = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-              ))}
-              <SwiperSlide className={styles.more}>
-                <button className={styles.explore}>Explore More</button>
+              ))
+            ) : (
+              <SwiperSlide className={styles.myswipe}>
+                <div>No hotels available</div>
               </SwiperSlide>
-            </Swiper>
-          </>
+            )}
+            <SwiperSlide className={styles.more}>
+            <button 
+  style={{
+    height: '3vw',
+    marginLeft: '1.5vw',
+    backgroundColor: "#f5f5f5",// No need for !important in inline styles
+    color: 'black',
+    marginTop: '1vw',
+    outline: 'none',
+    width: '70%',
+    borderRadius: "5px", // Optional, if you want to set the width
+  }}
+>
+  Explore More
+</button>
+
+
+            </SwiperSlide>
+          </Swiper>
         </div>
         <div className={styles.lowright}>
-          <button
-            className={styles.btn}
-            onClick={() => swiperuseRef.current.sw.slideNext()}
-          >
-            {" "}
-            {">"}{" "}
+          <button className={styles.btn} onClick={handleNext}>
+            {">"}
           </button>
         </div>
       </div>

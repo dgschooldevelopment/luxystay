@@ -27,78 +27,41 @@ import Loimg25 from "./assets/locationImg25.svg";
 import Loimg26 from "./assets/locationImg26.svg";
 import Loimg27 from "./assets/locationImg27.svg";
 
+// Removed the unnecessary `0` item from the totalDest array.
 const totalDest = [
-  {
-    hotelimg: Loimg1,
-    hotelname: "jaipur",
-  },
-  {
-    hotelimg: Loimg2,
-    hotelname: "Delhi",
-  },
-  {
-    hotelimg: Loimg3,
-    hotelname: "Udaipur",
-  },
-  {
-    hotelimg: Loimg4,
-    hotelname: "jaipur",
-  },
-  {
-    hotelimg: Loimg5,
-    hotelname: "Delhi",
-  },
-  {
-    hotelimg: Loimg6,
-    hotelname: "Udaipur",
-  },
-  {
-    hotelimg: Loimg7,
-    hotelname: "Delhi",
-  },
-  {
-    hotelimg: Loimg8,
-    hotelname: "Udaipur",
-  },
-  {
-    hotelimg: Loimg9,
-    hotelname: "jaipur",
-  },
-  {
-    hotelimg: Loimg10,
-    hotelname: "Delhi",
-  },
-  {
-    hotelimg: Loimg11,
-    hotelname: "Udaipur",
-  },
-  {
-    hotelimg: Loimg12,
-    hotelname: "jaipur",
-  },
-  {
-    hotelimg: Loimg13,
-    hotelname: "Delhi",
-  },
-  {
-    hotelimg: Loimg14,
-    hotelname: "Udaipur",
-  },
-  0
+  { hotelimg: Loimg1, hotelname: "Jaipur" },
+  { hotelimg: Loimg2, hotelname: "Delhi" },
+  { hotelimg: Loimg3, hotelname: "Udaipur" },
+  { hotelimg: Loimg4, hotelname: "Jaipur" },
+  { hotelimg: Loimg5, hotelname: "Delhi" },
+  { hotelimg: Loimg6, hotelname: "Udaipur" },
+  { hotelimg: Loimg7, hotelname: "Delhi" },
+  { hotelimg: Loimg8, hotelname: "Udaipur" },
+  { hotelimg: Loimg9, hotelname: "Jaipur" },
+  { hotelimg: Loimg10, hotelname: "Delhi" },
+  { hotelimg: Loimg11, hotelname: "Udaipur" },
+  { hotelimg: Loimg12, hotelname: "Jaipur" },
+  { hotelimg: Loimg13, hotelname: "Delhi" },
+  { hotelimg: Loimg14, hotelname: "Udaipur" },
 ];
 
-const   LocationSpot = () => {
+const LocationSpot = ({ onLocationSelect }) => {
   return (
-    <div className={styles.loactionMain}>
+    <div className={styles.locationMain}>
       <div className={styles.gallery}>
-        {totalDest.map((items) => (
-          <div key={items.hotelname}>
-            <img src={items.hotelimg} alt={items.hotelname} height={100} />
-            <h4 className={styles.hotelName}>{items.hotelname}</h4>
+        {totalDest.map((item) => (
+          <div 
+            key={item.hotelname} 
+            className={styles.locationItem} 
+            onClick={() => onLocationSelect(item.hotelname)}
+          >
+            <img src={item.hotelimg} alt={item.hotelname} height={100} />
+            <h4 className={styles.hotelName}>{item.hotelname}</h4>
           </div>
         ))}
       </div>
     </div>
   );
 };
+
 export default LocationSpot;

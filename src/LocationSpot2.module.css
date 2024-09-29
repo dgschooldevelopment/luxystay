@@ -1,7 +1,8 @@
-.loactionMain{
+/* .loactionMain{
     height: 24vw;
     width: 90%;
     margin-left: 2%;
+    /* background-color: red; 
 }
 
 .gallery{
@@ -18,33 +19,32 @@
 }
 .gallery img{
     margin-right:6vw ;
-    /* background-color: red; */
+    /* background-color: red; 
 }
 .hotelName{
     font-size: 1.1vw;
     font-weight: 400;
     margin-left: 2vw;
-    /* text-align: center; */
+    /* text-align: center; 
 }
 .heading{
     padding-top: 5vw;
     padding-left: 8%;
     font-weight: 500;
   }
-
   @media (min-width:1px) and (max-width:425px) {
     .loactionMain{
-        /* background-color: red;    */
+        /* background-color: red;    
         height: 65vh;
     }
     .gallery{
         display: flex;
         flex-direction: row;
         /* flex-wrap: nowrap; */
-        /* background-color: yellow; */
+        /* background-color: yellow; 
         height: fit-content;
         /* height: 30%; */
-        /* overflow-x: auto; */
+        /* overflow-x: auto; 
     }
     .gallery img{
         height: 9vh;
@@ -56,3 +56,73 @@
     }
     
   }
+
+ */
+
+
+
+
+
+
+
+
+
+
+ .loactionMain {
+    height: auto;
+    width: 90%;
+    margin-left: 2%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); /* Ensures a responsive grid */
+    gap: 2vw; /* Adds space between items */
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.gallery img {
+    width: 100%; /* Ensures images fill their container */
+    height: 80px;
+    /* height: auto; */
+}
+
+.hotelName {
+    font-size: 1.1vw;
+    font-weight: 400;
+    margin-top: 1vw; /* Add margin to separate the text from the image */
+    text-align: center; /* Centers the hotel name */
+}
+
+.heading {
+    padding-top: 5vw;
+    padding-left: 8%;
+    font-weight: 500;
+}
+
+@media (max-width: 425px) {
+    .loactionMain {
+        height: auto;
+    }
+    
+    .gallery {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+        gap: 4vw; /* Increase gap for mobile */
+    }
+
+    .gallery img {
+        height: 9vh;
+        object-fit: cover;
+    }
+
+    .hotelName {
+        font-size: 2vh;
+        font-weight: 500;
+        color: #bababa;
+    }
+}

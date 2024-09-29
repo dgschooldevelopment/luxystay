@@ -1,0 +1,601 @@
+.optionsection{
+    height: fit-content;
+    width: 100%;
+    /* background-color: red; */
+}
+.optionnav{
+    height: 30px;
+    width: 90%;
+    margin-left: 5%;
+    /* background-color: yellow; */
+    border-bottom:1px #bababa solid ;
+    display: flex;
+    justify-content: space-around
+
+}
+
+.optionnav a{
+    color: black;
+    font-size: 19px;
+    text-decoration: none;
+}
+.options{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    /* background-color: yellow; */
+
+}
+.optionleft{
+    height: 100%;
+    width: 65%;
+    /* background-color: red; */
+    overflow-y:scroll;
+    padding-left: 4%;
+    padding-top: 1.3%;
+}
+.optionleft::-webkit-scrollbar{
+    display: none;
+}
+.optionright{
+    height: 100%;
+    width: 35%;
+    /* background-color: yellow; */
+}
+.optionleft p{
+font-size: 18px;
+padding-left: 2px;
+}
+
+.span{
+    font-size: 16px;
+    padding-left: 10PX;
+}
+.optionleft img{
+    margin-top: 20px;
+}
+.optOption{
+    /* background-color:yellow; */
+    width: 90%;
+    height: 40px;
+    margin-top: 30px;
+    display: flex;
+    
+}
+.actualop{
+    height: 100%;
+    width: 168px;
+    background-color: #eaf2fd;
+    border-radius:5px ;
+    margin-right: 15PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    width: 90%;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.heading {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: #fff7e6;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.heading .contact {
+    display: flex;
+    align-items: center;
+}
+.heading .contact i {
+    margin-right: 10px;
+}
+.heading .contact span {
+    font-weight: bold;
+}
+.heading .callback {
+    background-color: #e6f0ff;
+    border: 1px solid #cce0ff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.content {
+    margin-top: 20px;
+}
+.content h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.content h1::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 24px;
+    background-color: #ff6666;
+    margin-right: 10px;
+}
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+.buttons button {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: black;
+}
+
+
+.pricecard {
+    width: 400px;
+    height: 80%;
+    background: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+}
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    /* background-color: red; */
+}
+.price span {
+    font-size: 14px;
+    color: #888;
+}
+.input_group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 60px;
+    /* background-color: red; */
+}
+.input_group div {
+    width: 44%;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+.input_group div i {
+    margin-left: 5px;
+}
+.select_dates {
+    text-align: center;
+    background: #e6f4ea;
+    color: #4caf50;
+    /* padding: 10px; */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    height: 20px;
+}
+.check_availability {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.policy {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.policy a {
+    color: #007bff;
+    text-decoration: none;
+}
+.connect_host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.connect_host i {
+    margin-right: 10px;
+}
+.request_callback {
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+.colorfuldiv{
+    background: rgb(238,200,243);
+background: linear-gradient(149deg, rgba(238,200,243,1) 35%, rgba(210,234,235,1) 86%);
+    padding: 30px 30px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.hotel_swiper {
+    width: 90%;
+    overflow-x: scroll;
+    /* background-color: rebeccapurple; */
+    /* margin: 20px auto; */
+}
+.hotel_swiper::-webkit-scrollbar{
+    display: none;
+}
+.heading {
+    display: flex;
+    width: 85%;
+    /* align-items: center; */
+    border-bottom: 2px solid #e0e0e0;
+    /* padding-bottom: 10px; */
+}
+.heading h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+.heading .indicator {
+    width: 5px;
+    height: 24px;
+    background-color: #e91e63;
+    margin-right: 10px;
+}
+.carousel {
+    display: flex;
+    align-items: center;
+    /* background-color: #007bff; */
+    /* justify-content: space-between; */
+    /* margin: 20px 0; */
+}
+
+.carousel .slides {
+    display: flex;
+    flex-direction: row;
+    /* overflow: scroll; */
+    width: 100%;
+    /* background-color: red;        */
+}
+.carousel .slide {
+    min-width: 35%;
+    margin-right: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 30px;
+    /* background-color: yellow; */
+}
+
+.slideimg{
+    min-width: 30%;
+    margin-right: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.carousel .slide .caption {
+    /* position: absolute; */
+    /* bottom: 200px; */
+    bottom: -28px;
+    left: 10px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    color: #0f0c0c;
+
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+.details .detail {
+    width: 30%;
+}
+.details .detail ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.details .detail ul li {
+    margin-bottom: 10px;
+    color: #333;
+}
+.caption ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333; /* Adjust color as needed */
+  }
+  .icon {
+    margin-right: 8px; /* Adjust space between icon and text */
+/* Change to your preferred icon color */
+    
+    color:black;
+    font-size: 21px;
+}
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .arrowControls {
+    display: flex;
+    gap: 10px;
+  }
+  /* Amenities.module.css */
+  .amenitiesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+  }
+  
+  .amenityCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #c3c7c3;
+    border-radius: 4px;
+    padding: 10px;
+    width: 80px; /* Adjust width according to StayVista's style */
+    height: 80px; /* Adjust height to match */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .amenityImage {
+    width: 40px;  /* Set width similar to StayVista */
+    height: 40px; /* Set height similar to StayVista */
+    object-fit: contain;
+    margin-bottom: 8px;
+  }
+  
+  .amenityName {
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+  }
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .arrowControls {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .arrow {
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .arrow:hover {
+    color: #000;
+  }
+  
+  .carousel {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  .slides {
+    display: flex;
+  }
+  
+  .slide {
+    min-width: 300px;
+    margin-right: 20px;
+  }
+  
+  .slideimg {
+    object-fit: cover;
+  }
+  
+  .caption {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .mealsContainer {
+    margin: 20px 0;
+  }
+  
+  .mealsContainer h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .mealsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between meal cards */
+  }
+  
+  .mealCard {
+    background: #fff; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Ensures child elements don't overflow */
+    width: 100%; 
+    /* Fixed width for uniformity */
+    transition: transform 0.3s; /* Smooth scaling effect */
+  }
+  
+  .mealCard:hover {
+    /* transform: scale(1.05);  */
+  }
+  
+  .mealImage {
+    width: 100%; /* Full width */
+    height: 192px; /* Maintain aspect ratio */
+  }
+  
+  .mealName {
+    font-size: 20px; /* Font size for meal name */
+    font-weight: bold; /* Bold text */
+    margin: 10px; /* Space around meal name */
+    color: #333; /* Color for meal name */
+  }
+  
+  .mealDescription {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 10px; /* Space around the description */
+  }
+  
+  .mealDescription li {
+    margin-bottom: 5px; /* Space between items */
+    color: #666; /* Color for description text */
+  }
+  .mapContainer {
+    height: 350px; /* Adjust height as needed */
+    width: 100%; /* Ensure the map takes full width */
+    position: relative;
+  }
+  .map {
+    height: 100%; /* Map should fill the container */
+    width: 100%;
+  }
+  
+  .datePicker {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+/* sdfdssdfsssssssss */
+/* .optionSection {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.tabNav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tabButton {
+    background-color: #3280ec;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tabButton:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftColumn {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.rightColumn {
+    flex: 1;
+}
+
+.hotelTitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.location {
+    color: gray;
+}
+
+.highlights, .description, .spaces {
+    margin-bottom: 20px;
+}
+
+.spaceCard {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.spaceImage {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.priceCard {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.inputGroup {
+    margin: 10px 0;
+}
+
+.availabilityButton {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.availabilityButton:hover {
+    background-color: #218838;
+} */
